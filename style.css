@@ -242,15 +242,105 @@ section {
 .servicos {
     background-color: var(--segundary-color);
     color: var(--primary-color);
-    padding-top: 3vh;
+    padding-block: 3vh;
     gap: 3vh;
+    height: auto;
+    display: flex;
+    flex-direction: column;
 }
 .servicos-container{
     display: flex;
     width: 100%;
+    justify-content: space-between;
+}
+.servicos-item{
+    width: 400px;
+    height: 500px;
+    border: 4px solid var(--primary-color);
+    border-radius: 24px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    padding: 20px;
+}
+.servicos-item img{
+    filter: drop-shadow(3px 3px 3px #0005);
+}
+.servicos-item h4{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-shadow: 3px 3px 3px #0005;
+}
+.servicos-item p{
+    color: black;
+    text-align: center;
+    text-shadow: 3px 3px 3px #0005;
 }
 footer {
     width: 100%;
     height: 526px;
     background-color: #f07807;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+footer nav{
+    display: flex;
+    width: 75%;
+    justify-content: space-between;
+    align-items: center;
+    flex-grow: 1;
+    padding-top: 10vh;
+}
+.nav-item{
+    height: 100%;
+    flex-direction: column;
+    display: flex;
+    gap: 1vh;
+}
+.logo{
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    padding-bottom: 15vh;
+}
+.nav-item h4{
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+.nav-item menu{
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+.nav-item li{
+    display: flex;
+    gap: 12px;
+    width: 200px;
+}
+.social a{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    border: 3px solid #fff;
+    display: grid;
+    place-content: center;
+    font-size: 1.5rem;
+    transition: 0.6s;
+}
+.social a:hover{
+    background-color: #fff;
+    color: var(--segundary-color);
+}
+.copy-right{
+    height: 72px;
+    width: 100%;
+    display: grid;
+    place-content: center;
+    font-size: 0.8rem;
+    font-weight: 300;
+    font-style: italic;
+    border-top: 2px solid var(--segundary-color) ;
 }
