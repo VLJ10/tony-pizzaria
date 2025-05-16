@@ -241,7 +241,13 @@ section {
 }
 .servicos {
     background-color: var(--segundary-color);
-    
+    color: var(--primary-color);
+    padding-top: 3vh;
+    gap: 3vh;
+}
+.servicos-container{
+    display: flex;
+    width: 100%;
 }
 footer {
     width: 100%;
